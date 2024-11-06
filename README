@@ -1,16 +1,16 @@
-dwm - dynamic window manager
+nwm - narrow window manager
 ============================
-dwm is an extremely fast, small, and dynamic window manager for X.
+nwm is an extremely fast, small, and dynamic window manager for X. It is a fork of dwm. nwm will eventually be a slightly slower, slightly bigger version of dwm that restricts the software you do based on rules defined by administrator or user.
 
 
 Requirements
 ------------
-In order to build dwm you need the Xlib header files.
+In order to build nwm you need the Xlib header files.
 
 
 Installation
 ------------
-Edit config.mk to match your local setup (dwm is installed into
+Edit config.mk to match your local setup (nwm is installed into
 the /usr/local namespace by default).
 
 Afterwards enter the following command to build and install dwm (if
@@ -19,13 +19,13 @@ necessary as root):
     make clean install
 
 
-Running dwm
+Running nwm
 -----------
 Add the following line to your .xinitrc to start dwm using startx:
 
-    exec dwm
+    exec dwm (for now)
 
-In order to connect dwm to a specific display, make sure that
+In order to connect nwm to a specific display, make sure that
 the DISPLAY environment variable is set correctly, e.g.:
 
     DISPLAY=foo.bar:1 exec dwm
@@ -44,5 +44,5 @@ like this in your .xinitrc:
 
 Configuration
 -------------
-The configuration of dwm is done by creating a custom config.h
+The configuration of nwm is done by creating a custom config.h
 and (re)compiling the source code.
